@@ -14,6 +14,10 @@
 		83BEA0CF21C29BD50044BFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BEA0CD21C29BD50044BFF5 /* LaunchScreen.storyboard */; };
 		83BEA0DA21C29BD50044BFF5 /* youtubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEA0D921C29BD50044BFF5 /* youtubeTests.swift */; };
 		83BEA0E521C29BD50044BFF5 /* youtubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEA0E421C29BD50044BFF5 /* youtubeUITests.swift */; };
+		83BEA0F821C5F86E0044BFF5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEA0F721C5F86E0044BFF5 /* extensions.swift */; };
+		83BEA0FB21C5F8FC0044BFF5 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEA0FA21C5F8FC0044BFF5 /* VideoCell.swift */; };
+		83BEA0FE21C63FB40044BFF5 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEA0FD21C63FB40044BFF5 /* MenuBar.swift */; };
+		83BEA10121C7ED1C0044BFF5 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEA10021C7ED1C0044BFF5 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		83BEA0E021C29BD50044BFF5 /* youtubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youtubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BEA0E421C29BD50044BFF5 /* youtubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youtubeUITests.swift; sourceTree = "<group>"; };
 		83BEA0E621C29BD50044BFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BEA0F721C5F86E0044BFF5 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		83BEA0FA21C5F8FC0044BFF5 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		83BEA0FD21C63FB40044BFF5 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		83BEA10021C7ED1C0044BFF5 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,11 @@
 		83BEA0C321C29BD40044BFF5 /* youtube */ = {
 			isa = PBXGroup;
 			children = (
+				83BEA0FF21C7ECF10044BFF5 /* Model */,
+				83BEA0FC21C5F9830044BFF5 /* Controller */,
+				83BEA0F921C5F8BF0044BFF5 /* View */,
+				83BEA0F421C5F8210044BFF5 /* Helpers */,
 				83BEA0C421C29BD40044BFF5 /* AppDelegate.swift */,
-				83BEA0C621C29BD40044BFF5 /* ViewController.swift */,
 				83BEA0C821C29BD40044BFF5 /* Main.storyboard */,
 				83BEA0CB21C29BD50044BFF5 /* Assets.xcassets */,
 				83BEA0CD21C29BD50044BFF5 /* LaunchScreen.storyboard */,
@@ -123,6 +134,39 @@
 				83BEA0E621C29BD50044BFF5 /* Info.plist */,
 			);
 			path = youtubeUITests;
+			sourceTree = "<group>";
+		};
+		83BEA0F421C5F8210044BFF5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				83BEA0F721C5F86E0044BFF5 /* extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		83BEA0F921C5F8BF0044BFF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83BEA0FA21C5F8FC0044BFF5 /* VideoCell.swift */,
+				83BEA0FD21C63FB40044BFF5 /* MenuBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83BEA0FC21C5F9830044BFF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83BEA0C621C29BD40044BFF5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83BEA0FF21C7ECF10044BFF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83BEA10021C7ED1C0044BFF5 /* Video.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				83BEA0C721C29BD40044BFF5 /* ViewController.swift in Sources */,
+				83BEA10121C7ED1C0044BFF5 /* Video.swift in Sources */,
+				83BEA0FB21C5F8FC0044BFF5 /* VideoCell.swift in Sources */,
 				83BEA0C521C29BD40044BFF5 /* AppDelegate.swift in Sources */,
+				83BEA0F821C5F86E0044BFF5 /* extensions.swift in Sources */,
+				83BEA0FE21C63FB40044BFF5 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

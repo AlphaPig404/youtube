@@ -16,6 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+        window?.rootViewController = UINavigationController(rootViewController: HomeController(collectionViewLayout: layout))
+        
+        UINavigationBar.appearance().tintColor = UIColor.rgb(red: 230, green: 32, blue: 31)
+        UINavigationBar.appearance().barTintColor = UIColor.rgb(red: 230, green: 32, blue: 31)
+        UINavigationBar.appearance().isTranslucent = false
+        
+        // rm navtigation shadow
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+//        let statusBarView = UIView(frame: CGRect(x: 0, y: 0, width: (window?.bounds.width)!, height: 20))
+//        statusBarView.backgroundColor = UIColor.rgb(red: 194, green: 31, blue: 31)
+//        window?.addSubview(statusBarView)
+//        window?.addConstraintsWidhFormat(format: "H:|[v0]|", views: statusBarView)
+//        window?.addConstraintsWidhFormat(format: "V:|[v0(20)]", views: statusBarView)
+        
         return true
     }
 
